@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+p {
+    font-size: 1.65em;
+    animation: letra 6s infinite;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: 'courier new';
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px Orgba(0, 0, 0, 0.5);
+    animation: brillo 4s infinite;
+    background-color: rgb(0, 50, 130);
+}
+
+button:hover {
+    background-color: rgb(0, 30, 120);
+    color: rgb(200, 200, 200);
+}
+
+header {
+    background-color: rgb(20, 20, 20);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 115, 200);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-family: 'Zapfino';
+}
+
+.img{
+    height: 160px;
+    width: 180px;
+    border-radius: 12px;
+    animation: opacidad 4s infinite;
+}
+
+#a1{
+    background-image: url("Media/noche.jpeg");
+}
+
+#a2{
+    background-image: url("Media/Compton.png");
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@keyframes letra{
+    0%{
+        color: rgb(255, 240, 0);
+    }
+    50%{
+        color: rgb(255, 190, 0);
+    }
+    100%{
+        color: rgb(255, 240, 0);
+    }
+}
+
+@keyframes brillo{
+    0%{
+        box-shadow: 0 0 10px 0 rgb(120, 237, 255);
+    }
+    50%{
+        box-shadow: 0 0 10px 0 rgba(0, 120, 255, 0.4);
+    }
+    100%{
+        box-shadow: 0 0 10px 0 rgb(120, 237, 255);
+    }
+}
+
+@keyframes opacidad{
+    0%{
+        opacity: 100% ;
+    }
+    50%{
+        opacity: 50% ;
+    }
+    100%{
+        opacity: 100% ;
+    }
+}
